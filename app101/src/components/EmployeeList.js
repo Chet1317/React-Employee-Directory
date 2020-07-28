@@ -1,4 +1,5 @@
 import React from "react"
+import EmployeeRow from "./EmployeeRow"
 
 function EmployeeList (props){
     return(
@@ -14,12 +15,9 @@ function EmployeeList (props){
           </tr>
         </thead>
         <tbody>
+        {props.employees.map( employee=><TableRow {...employee} /> )}
           <tr>
-          <th scope="col">1</th>
-            <th scope="row">Rich Froning</th>
-            <td>rich@gmail.com</td>
-            <td>905-999-4278</td>
-            <td>Accountant</td>
+         
           </tr>
           <tr>
           <th scope="col">2</th>
