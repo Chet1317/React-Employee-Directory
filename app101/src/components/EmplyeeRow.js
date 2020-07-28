@@ -2,12 +2,14 @@ import React from"react"
 
 function EmployeeRow (props){
     return (
-        <div>
-        <th scope="col">1</th>
-        <th scope="row">Rich Froning</th>
-        <td>rich@gmail.com</td>
-        <td>905-999-4278</td>
-        <td>Accountant</td>
-        </div>
+        <tr>
+        <th scope="col">{props.id}</th>
+          <th scope="row">{props.Name}</th>
+          <td>{props.Email}</td>
+          <td>{props.Phone}</td>
+          <td>{props.Position}</td>
+        </tr>
     )
 }
+
+export default EmployeeRow
