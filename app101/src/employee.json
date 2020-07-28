@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "Name": "Rich Froning",
+      "Email": "rich@gmail.com",
+      "Phone": "905-999-4278",
+      "Position": "Accountant"
+    },
+    {
+        "id": 2,
+        "Name": "Jessica Williams",
+        "Email": "j_williams@gmail.com",
+        "Phone": "705-289-3389",
+        "Position": "Sales Representative"
+    },
+    {
+        "id": 1,
+        "Name": "Bruce Wayne",
+        "Email": "brucew@gmail.com",
+        "Phone": "999-678-4519",
+        "Position": "CEO"
+    }
+  ]
