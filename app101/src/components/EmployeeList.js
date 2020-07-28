@@ -15,7 +15,7 @@ function EmployeeList (props){
           </tr>
         </thead>
         <tbody>
-        {props.employees.map( employee=><TableRow {...employee} /> )}
+        {props.employees.map( employee=><EmployeeRow {...employee} /> )}
           
          
         </tbody>
