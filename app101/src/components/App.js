@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchName from "./components/SearchName/"
+import FilterSearch from "./components/FilterSearch/"
 import './App.css';
 
 function App() {
@@ -12,22 +13,10 @@ function App() {
       </div>
       <form>
         <SearchName />
+        <FilterSearch />
         <div class="container">
-          <div class="form-group">
-            <label for="name">Search</label>
-            <input type="password" class="form-control" id="name" placeholder="Name"></input>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Filter</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Name</option>
-              <option>Email</option>
-              <option>Phone Number</option>
-              <option>Position</option>
-            </select>
-          </div>
-        </div>
+          
+         
       </form>
       <div class="container">
         <table class="table">
