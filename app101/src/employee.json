@@ -1,23 +1,23 @@
 [
     {
       "id": 1,
-      "Name": "Rich Froning",
-      "Email": "rich@gmail.com",
-      "Phone": "905-999-4278",
-      "Position": "Accountant"
+      "name": "Rich Froning",
+      "email": "rich@gmail.com",
+      "phone": "905-999-4278",
+      "position": "Accountant"
     },
     {
         "id": 2,
-        "Name": "Jessica Williams",
-        "Email": "j_williams@gmail.com",
-        "Phone": "705-289-3389",
-        "Position": "Sales Representative"
+        "name": "Jessica Williams",
+        "email": "j_williams@gmail.com",
+        "phone": "705-289-3389",
+        "position": "Sales Representative"
     },
     {
         "id": 3,
-        "Name": "Bruce Wayne",
-        "Email": "brucew@gmail.com",
-        "Phone": "999-678-4519",
-        "Position": "CEO"
+        "name": "Bruce Wayne",
+        "email": "brucew@gmail.com",
+        "phone": "999-678-4519",
+        "position": "CEO"
     }
   ]

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import SearchName from "./components/SearchName"
 import FilterSearch from "./components/FilterSearch"
 import EmployeeList from "./components/EmployeeList"
@@ -6,36 +6,34 @@ import employees from "./employee.json"
 import './App.css';
 
 function App() {
-  const [ employeeManager, setList ]= useState( { list: employees, search: '', filter: 'id' } )
-    
-    function updateSearch( search ){
-      const filterList = employees.filter( employee => employee.name.toLowerCase().indexOf( search.toLowerCase() )>-1 )
-      setList( { ...employeeManager, search, list: filterList })
-    }
 
-    function updateFilter( filter ){
-      const newFilterList = employeeManager.list.sort(function(a, b) {
-        return a[filter] > b[filter] ? 1 : -1;
-      })
-      setList( { ...employeeManager, filter, list: newFilterList })
-    }
- 
+  const [tableManager, setList] = useState({ list: employees, search: '', filter: 'id' })
+  function updateSearch(search) {
+    const filterList = employees.filter(employee => employee.name.toLowerCase().indexOf(search.toLowerCase()) > -1)
+    setList({ ...tableManager, search, list: filterList })
+  }
+
+  function updateFilter(filt) {
+    const newOrderForList = tableManager.list.sort(function (a, b) {
+      return a[filt] > b[filt] ? 1 : -1;
+    })
+    setList({ ...tableManager, filt, list: newOrderForList })
+  }
+
   return (
-   
+    <div>
+      <nav class="navbar navbar-light bg-light">
+        <a  class="navbar-brand" href="#">Employee List</a>
+      </nav>
 
-      <div>
-        <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">Employee List</a>
-        </nav>
- 
       <div class="container">
         <form>
-          <SearchName />
-          <FilterSearch />
+          <SearchName search={tableManager.search} updateSearch={updateSearch}/>
+          <FilterSearch filter={tableManager.filter} updateFilter={updateFilter}/>
         </form>
-        <EmployeeList employees={employees} />
+        <EmployeeList employees={tableManager.list}  />
       </div>
-   </div>
+    </div>
   );
 }
 
