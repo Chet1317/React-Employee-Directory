@@ -11,6 +11,7 @@ function SearchName(props) {
         <div class="form-group">
             <label for="name">Search</label>
             <input onChange={InputChange} value={props.search} class="form-control" id="name" placeholder="Name"></input>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     )
 }

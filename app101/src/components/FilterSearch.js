@@ -11,10 +11,11 @@ function FilterSearch(props){
         <label for="InputPassword">Filter</label>
         <select onChange={changeOrder} value={props.filt} class="form-control">
         <option value="id">id</option>
-          <option value="Name">Name</option>
-          <option value="Email">Email</option>
-          <option value="Phone">Phone Number</option>
-          <option value="Position">Position</option>
+          <option value="name">Name</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone Number</option>
+          <option value="position">Position</option>
+          <option value="location">Location</option>
         </select>
       </div>
     )

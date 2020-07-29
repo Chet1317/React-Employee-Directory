@@ -4,20 +4,46 @@
       "name": "Rich Froning",
       "email": "rich@gmail.com",
       "phone": "905-999-4278",
-      "position": "Accountant"
+      "position": "Accountant",
+      "location": "Toronto"
     },
     {
         "id": 2,
         "name": "Jessica Williams",
         "email": "j_williams@gmail.com",
         "phone": "705-289-3389",
-        "position": "Sales Representative"
+        "position": "Sales Representative",
+        "location": "Toronto"
     },
     {
         "id": 3,
         "name": "Bruce Wayne",
         "email": "brucew@gmail.com",
         "phone": "999-678-4519",
-        "position": "CEO"
+        "position": "CEO",
+        "location": "Gotham City"
+    },
+    {"id": 4,
+        "name": "Michelle Letendre",
+        "email": "ml13@gmail.com",
+        "phone": "999-679-451*59",
+        "position": "Marketing",
+        "location": "Vancouver"
+    },
+    {
+        "id": 5,
+        "name": "Dave Clarke",
+        "email": "dclarke@gmail.com",
+        "phone": "999-789-0098",
+        "position": "Wed Developer",
+        "location": "Winnipeg"
+    },
+    {
+        "id": 6,
+        "name": "Peter Parker",
+        "email": "pparker@gmail.com",
+        "phone": "446-375-4519",
+        "position": "Photographer",
+        "location": "New York"
     }
   ]

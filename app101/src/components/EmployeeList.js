@@ -12,6 +12,7 @@ function EmployeeList (props){
             <th scope="col">Email</th>
             <th scope="col">Phone Number</th>
             <th scope="col">Position</th>
+            <th scope="col">Location</th>
           </tr>
         </thead>
         <tbody>
