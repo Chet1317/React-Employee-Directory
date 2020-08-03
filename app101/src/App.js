@@ -3,7 +3,7 @@ import SearchName from "./components/SearchName"
 import FilterSearch from "./components/FilterSearch"
 import EmployeeList from "./components/EmployeeList"
 import employees from "./employee.json"
-// import './App.css';
+import './App.css';
 import "./index.css"
 function App() {
 
